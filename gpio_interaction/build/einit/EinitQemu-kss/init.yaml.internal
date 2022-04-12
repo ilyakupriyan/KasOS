@@ -1,0 +1,15 @@
+entities:
+
+- name: client.Client
+  connections:
+  - target: kl.drivers.GPIO
+    id: kl.drivers.GPIO
+  - target: kl.drivers.BSP
+    id: kl.drivers.BSP
+
+- name: kl.drivers.GPIO
+  path: $<TARGET_FILE_NAME:gpio::entity_qemu>
+
+- name: kl.drivers.BSP
+  path: $<TARGET_FILE_NAME:bsp::entity_qemu>
+

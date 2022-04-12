@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/ilya/Projects/KasOS/gpio_interaction/client/src/gpio.c
+stdio.h
+-
+stdlib.h
+-
+unistd.h
+-
+gpio/gpio.h
+-
+stdbool.h
+-
+bsp/bsp.h
+-
+

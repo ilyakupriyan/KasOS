@@ -1,0 +1,15 @@
+entities:
+
+- name: client.Client
+  connections:
+  - target: kl.drivers.GPIO
+    id: kl.drivers.GPIO
+  - target: kl.drivers.BSP
+    id: kl.drivers.BSP
+
+- name: kl.drivers.GPIO
+  path: gpio_hw
+
+- name: kl.drivers.BSP
+  path: bsp_hw
+
