@@ -60,7 +60,10 @@ int main(int argc, const char *argv[]) {
     }
 
     while (true) {
-        GpioIn(handle, GPIO_PIN_IN, &pinVal);
+        if (GpioIn(handle, GPIO_PIN_IN, &pinVal)) {
+            fprintf (stderr, "GpioIn for GPIO%d failed\n", GPIO_PIN_IN);
+            return EXIT_FAILURE;
+        }
         if (pinVal == 1) {
             if (GpioOut(handle, GPIO_PIN_OUT, 1)) {
                 fprintf(stderr, "GpioOut 1 for GPIO%d failed\n", GPIO_PIN_OUT);

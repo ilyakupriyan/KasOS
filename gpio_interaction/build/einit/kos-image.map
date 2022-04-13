@@ -14,7 +14,7 @@ Discarded input sections
                 0x0000000000000000       0x31 /opt/KasperskyOS-Community-Edition-1.0.1.4/sysroot-arm-kos/../libexec/arm-kos/kos
  .noinit        0x0000000000000000        0x2 /opt/KasperskyOS-Community-Edition-1.0.1.4/sysroot-arm-kos/../libexec/arm-kos/kos
  .ARM.attributes
-                0x0000000000000000       0x1d /tmp/tmp.dViy27ITl9
+                0x0000000000000000       0x1d /tmp/tmp.dZFy3mRclp
  .debug_frame   0x0000000000000000       0x2c /opt/KasperskyOS-Community-Edition-1.0.1.4/toolchain/lib/gcc/arm-kos/9.2.1/libgcc.a(_aeabi_uldivmod.o)
  .ARM.attributes
                 0x0000000000000000       0x1f /opt/KasperskyOS-Community-Edition-1.0.1.4/toolchain/lib/gcc/arm-kos/9.2.1/libgcc.a(_aeabi_uldivmod.o)
@@ -34,7 +34,7 @@ Name             Origin             Length             Attributes
 Linker script and memory map
 
 LOAD /opt/KasperskyOS-Community-Edition-1.0.1.4/sysroot-arm-kos/../libexec/arm-kos/kos
-LOAD /tmp/tmp.dViy27ITl9
+LOAD /tmp/tmp.dZFy3mRclp
 LOAD /opt/KasperskyOS-Community-Edition-1.0.1.4/toolchain/lib/gcc/arm-kos/9.2.1/libgcc.a
                 0x0000000010200000                . = 0x10200000
                 0x0000000010200000                _begin = .
@@ -196,7 +196,7 @@ LOAD /opt/KasperskyOS-Community-Edition-1.0.1.4/toolchain/lib/gcc/arm-kos/9.2.1/
                 0x00000000102074b0                rtl_strchr
                 0x0000000010207570                rtl_strrchr
                 0x0000000010207620                rtl_strcat
- .text          0x0000000010207644        0x0 /tmp/tmp.dViy27ITl9
+ .text          0x0000000010207644        0x0 /tmp/tmp.dZFy3mRclp
  .text          0x0000000010207644       0x3c /opt/KasperskyOS-Community-Edition-1.0.1.4/toolchain/lib/gcc/arm-kos/9.2.1/libgcc.a(_aeabi_uldivmod.o)
                 0x0000000010207644                __aeabi_uldivmod
  .text          0x0000000010207680      0x134 /opt/KasperskyOS-Community-Edition-1.0.1.4/toolchain/lib/gcc/arm-kos/9.2.1/libgcc.a(_udivmoddi4.o)
@@ -243,7 +243,7 @@ LOAD /opt/KasperskyOS-Community-Edition-1.0.1.4/toolchain/lib/gcc/arm-kos/9.2.1/
                 0x000000001020cb44                uartHw
                 0x000000001020cc30                SpinTableOut
                 0x000000001020cc40                cpuStarted
- .data          0x000000001020cc50        0x0 /tmp/tmp.dViy27ITl9
+ .data          0x000000001020cc50        0x0 /tmp/tmp.dZFy3mRclp
  .data          0x000000001020cc50        0x0 /opt/KasperskyOS-Community-Edition-1.0.1.4/toolchain/lib/gcc/arm-kos/9.2.1/libgcc.a(_aeabi_uldivmod.o)
  .data          0x000000001020cc50        0x0 /opt/KasperskyOS-Community-Edition-1.0.1.4/toolchain/lib/gcc/arm-kos/9.2.1/libgcc.a(_udivmoddi4.o)
  .data          0x000000001020cc50        0x0 /opt/KasperskyOS-Community-Edition-1.0.1.4/toolchain/lib/gcc/arm-kos/9.2.1/libgcc.a(_dvmd_tls.o)
@@ -273,7 +273,7 @@ LOAD /opt/KasperskyOS-Community-Edition-1.0.1.4/toolchain/lib/gcc/arm-kos/9.2.1/
  *fill*         0x000000001024ad37      0x2c9 
                 0x000000001024b000                __RomfsBegin = .
  *(.romfs)
- .romfs         0x000000001024b000   0x270000 /tmp/tmp.dViy27ITl9
+ .romfs         0x000000001024b000   0x270000 /tmp/tmp.dZFy3mRclp
  *(.romfs.*)
                 0x00000000104bb000                __RomfsEnd = .
                 0x00000000104bb000                . = ALIGN (0x1000)
@@ -294,7 +294,7 @@ LOAD /opt/KasperskyOS-Community-Edition-1.0.1.4/toolchain/lib/gcc/arm-kos/9.2.1/
                 0x00000000104bd024                fbBase
                 0x00000000104bd03c                realFbBase
                 0x00000000104c5268                mapList
- .bss           0x00000000104c5a68        0x0 /tmp/tmp.dViy27ITl9
+ .bss           0x00000000104c5a68        0x0 /tmp/tmp.dZFy3mRclp
  .bss           0x00000000104c5a68        0x0 /opt/KasperskyOS-Community-Edition-1.0.1.4/toolchain/lib/gcc/arm-kos/9.2.1/libgcc.a(_aeabi_uldivmod.o)
  .bss           0x00000000104c5a68        0x0 /opt/KasperskyOS-Community-Edition-1.0.1.4/toolchain/lib/gcc/arm-kos/9.2.1/libgcc.a(_udivmoddi4.o)
  .bss           0x00000000104c5a68        0x0 /opt/KasperskyOS-Community-Edition-1.0.1.4/toolchain/lib/gcc/arm-kos/9.2.1/libgcc.a(_dvmd_tls.o)
